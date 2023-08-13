@@ -1,5 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:ital,wght@0,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:ital,wght@0,300;1,600&family=Spicy+Rice&display=swap');
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #C2DEDC;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+ 
+}
+#content {
+  position:absolute;
+  width:100%;
+  overflow-y:hidden;
+  top:0;
+  bottom:0;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.App-items{
+  margin:30px;
+}
 .App-container {
   max-width: 960px;
   padding: var(--m) var(--m);
-  margin: auto;
+  margin: 30px;
+  background-color: #C2DEDC;
+  scroll-behavior: smooth;
 }
+
+.App-profile {
+  width: 450px;
+  height: 460px;
+  position: relative;
+  top: 150px;
+  left: 1000px;
+  animation: fadeIn 2s 1s forwards;
+  opacity: 0;
+}
+.App-hello {
+  width: 749px;
+  height: 231px;
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 90px;
+  position: relative;
+  top: -400px;
+  left: 120px;
+  animation: fadeIn 2s;
+}
+.App-Name {
+  width: 749px;
+  height: 231px;
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 90px;
+  position: relative;
+  top: -600px;
+  left: 428px;
+  opacity: 0;
+  animation: fadeIn 2s 1s forwards;
+}
+.App-bio {
+  
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 25px;
+  position: relative;
+  top: -700px;
+  left: 120px;
+  animation: fadeIn 2s 1.5s forwards;
+  opacity: 0;
+}
+.App-sunrise {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  position: relative;
+  left: 260px;
+  top: -270px;
+
+}
+.App-sunrise.active{
+  transform: translateY(0px);
+  position: relative;
+  opacity: 1;
+  left: 260px;
+  top: -270px;
+  
+}
+.App-hiking {
+  transform: translateY(150px);
+  opacity:0;
+  transition: 2s all ease;
+  position: relative;
+  left: -50px;
+  top: -70px;
+  
+}
+
+.App-hiking.active {
+  position: relative;
+  left: -50px;
+  top: -70px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.App-coffee {
+  transform: translateY(150px);
+  opacity: 0;
+  transition:2s all ease;
+  position: relative;
+  left: -25px;
+  top: -70px;
+  
+}
+.App-coffee.active {
+  position: relative;
+  left: -25px;
+  top: -70px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.App-about {
+  transform:translateY(50px);
+  opacity: 0;
+  transition: 2s all ease;
+  position: relative;
+  top: -650px;
+  left: 651px;
+}
+.App-about.active{
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 90px;
+  position: relative;
+  top: -650px;
+  left: 651px;
+  opacity: 1;
+  transform:translateY(0px);
+}
+.App-me {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 2s all ease;
+  position: relative;
+  top: -700px;
+  left: 651px;
+  
+}
+.App-me.active {
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 20px;
+  position: relative;
+  top: -700px;
+  left: 651px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.App-aboutMarker {
+  position: relative;
+  top:-650px;
+  font-size: 1px;
+  color: #116a7b;
+  
+}
+.App-work {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 2s all ease;
+  position: relative;
+  top: -450px;
+  left: 651px;
+
+}
+.App-work.active {
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 90px;
+  position: relative;
+  top: -450px;
+  left: 651px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.App-carContainer {
+  position: relative;
+  display: inline-block;
+}
+.App-car {
+  height: 210px;
+  width: 200px;
+  position: relative;
+  top: -1050px;
+  left: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s all ease;
+
+  
+}
+.App-car.active {
+  height: 210px;
+  width: 200px;
+  position: relative;
+  top: -1050px;
+  left: 150px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.App-carContainer:hover .App-carDes{
+  transition: opacity 2s;
+  opacity:1;
+}
+.App-carTitle {
+  position: relative;
+  top:-1005px;
+  left: 150px;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  color:#116a7b;
+}
+.App-carDate {
+  position: relative;
+  top:-1070px;
+  left:200px;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  color:#116a7b;
+}
+.App-mouse {
+  position: relative;
+  top:-500px;
+  left: 650px;
+  transform: translateY(50px);
+  opacity:0;
+  transition: 2s all ease;
+  
+}
+.App-mouse.active {
+  height: 210px;
+  width: 200px;
+  position: relative;
+  top:-500px;
+  left: 650px;
+  opacity:1;
+  transform: translateY(0px);
+}
+
+.App-mouseContainer:hover .App-mouseDes{
+  transition: opacity 2s;
+  opacity: 1;
+}
+.App-mouseTitle{
+  position: relative;
+  top:-485px;
+  left: 650px;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  color:#116a7b;
+}
+.App-mouseDate{
+  position:relative;
+  left:700px;
+  top:-560px;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  color:#116a7b;
+
+}
+.App-jet {
+  height: 350px;
+  width: 400px;
+  position: relative;
+  top:-1605px;
+  left: 980px;
+  opacity:0;
+  transform: translateY(50px);
+  transition: 2s all ease;
+  
+}
+.App-jet.active {
+  height: 350px;
+  width: 400px;
+  position: relative;
+  top:-1605px;
+  left: 980px;
+  opacity:1;
+  transform: translateY(0px);
+}
+.App-jetTitle {
+  position: relative;
+  top:-1495px;
+  left: 1100px;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  color:#116a7b;
+}
+.App-jetDate {
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  color:#116a7b;
+  position: relative;
+  top: -1710px;
+  left: 1100px;  
+
+}
+
+.App-jetContainer:hover .App-jetDes{
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+.App-carDes{
+  position: relative;
+  top:-1023px;
+  left: 150px;
+  opacity: 0;
+  color: #116a7b;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  overflow-y: hidden;
+
+}
+.App-mouseDes{
+  position: relative;
+  top:-500px;
+  left: 650px;
+  opacity: 0;
+  color: #116a7b;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  overflow-y: hidden;
+}
+
+.App-jetDes{
+  position: relative;
+  top:-1650px;
+  left: 1100px;
+  opacity: 0;
+  color: #116a7b;
+  font-family: "Luxurious Roman";
+  font-style: normal;
+  overflow-y: hidden;
+}
+.App-subtitle{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s all ease;
+  position: relative;
+  top:-550px;
+  left:600px;
+  
+
+}
+.App-subtitle.active{
+  position: relative;
+  top:-550px;
+  left:600px;
+  font-family: 'Spicy Rice';
+  color: #116a7b;
+  font-size: 20px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.App-reachout {
+  position: relative;
+  top: -250px;
+  left: 475px;
+  transform: translateY(50px);
+  transition: 2s all ease;
+  
+}
+
+.App-reachout.active {
+  position: relative;
+  top: -250px;
+  left: 475px;
+  font-family: 'Spicy Rice';
+  color: #116a7b;
+  font-size: 50px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.App-workMarker {
+  position: relative;
+  top: -350px;
+  color: #C2DEDC;
+  font-size: 1px;
+}
+
+.App-homeMarker {
+  position: relative;
+  top: -400px;
+  color: #C2DEDC;
+  font-size: 1px;
+  
+}
+.App-contact {
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 90px;
+  position: relative;
+  top: -1400px;
+  left: 100px;
+  opacity: 0;
+  transform:translateY(50px);
+  transition: 2s all ease;
+
+}
+
+.App-contact.active {
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 90px;
+  position: relative;
+  top: -1400px;
+  left: 100px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.App-contactCanvas {
+  background-color: #ECE5C7;
+  width: 837px;
+  height: 573px;
+  flex-shrink: 0;
+  position: relative;
+  left: 22%;
+  top: -1400px; 
+}
+
+.App-contactMarker {
+  position: relative;
+  top:-1825px;
+  font-size: 1px;
+  color: #C2DEDC;
+
+}
+.arrow {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+
+
+
+
+
+

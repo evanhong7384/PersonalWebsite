@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:ital,wght@0,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:ital,wght@0,300;1,600&family=Spicy+Rice&display=swap');
+
+.contactCanvas {
+  background-color: #ECE5C7;
+  width: 837px;
+  height: 573px;
+  position: relative;
+  left: 22%;
+  top: -1400px;
+  opacity:0;
+  transform: translateY(150px);
+  transition: 2s all ease
+}
+
+.contactCanvas.active{
+  background-color: #ECE5C7;
+  width: 837px;
+  height: 573px;
+  position: relative;
+  left: 22%;
+  top: -1400px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.connect{
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 70px;
+  position: relative;
+  left: 38%;
+  top: -2000px;
+  opacity:0;
+  transform: translateY(50px); 
+  transition: 2s all ease;
+
+
+}
+
+.connect.active{
+  flex-shrink: 0;
+  color: #116a7b;
+  font-family: "Spicy Rice";
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
+  font-size: 70px;
+  position: relative;
+  left: 38%;
+  top: -2000px;
+  transform: translateY(0px);
+  opacity:1;
+}
+
+.ContactBox-gmail {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  position: relative;
+  left:47%;
+  top:-2000px;
+}
+
+.ContactBox-linkedin {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  position: relative;
+  left:20%;
+  top:-2000px;
+}
+
+.ContactBox-github {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  position: relative;
+  left:49%;
+  top:-2000px;
+}
+
+.ContactBox-hands {
+  width: 955px;
+height: 505px;
+flex-shrink: 0;
+position: relative;
+top: -2150px;
+left: 20%;
+}
+

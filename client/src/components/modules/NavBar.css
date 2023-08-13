@@ -1,6 +1,18 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .NavBar-container {
   padding: var(--s) var(--m);
-  background-color: var(--primary);
+  background-color: #ECE5C7;
+  width: 100%;
+  height: 166;
+  position:fixed;
+  top:0;
+  z-index: 100;
+  animation: fadeIn 2s;
+  
+  
 }
 
 .NavBar-title {
@@ -8,8 +20,43 @@
   font-size: 20px;
 }
 
+
 .NavBar-linkContainer {
-  margin-left: var(--l);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  white-space: nowrap; /* Prevent headers from wrapping */
+  overflow: hidden;
+  margin:10px;
+  width: 1728;
+  height: 166;
+  
+}
+
+.NavBar-scroll {
+  color: #116A7B;
+  font-family: "Luxurious Roman", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin:0;
+  margin-right: 10px;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  animation: fadeIn 2s 2s forwards;
+  opacity: 0;
+  
+}
+.NavBar-scroll h3 {
+  position: absolute;
+  top: 100%;
+}
+
+.NavBar-scroll:hover {
+  opacity: 0.8;
 }
 
 .NavBar-link,
@@ -28,5 +75,5 @@
 }
 
 .NavBar-link + .NavBar-link {
-  margin-left: var(--m);
+  margin-left: 20px;
 }
