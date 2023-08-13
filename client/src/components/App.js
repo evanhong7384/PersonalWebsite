@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "./modules/NavBar.js";
 import ContactBox from "./modules/ContactBox.js"
-import { Router } from "@reach/router";
-import Feed from "./pages/Feed.js";
-import NotFound from "./pages/NotFound.js";
-import Profile from "./pages/Profile.js";
-import Chatbook from "./pages/Chatbook.js";
-
-import { socket } from "../client-socket.js";
-
-import { get, post } from "../utilities";
 import mainphoto from '../public/IMG_3032_1.png'
 import sunrise from '../public/Sunrise.png'
 import hiking from '../public/hiking.png'
